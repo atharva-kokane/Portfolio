@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharva Kokane | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="logo">Atharva Kokane</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Hi, I'm Atharva Kokane</h1>
+                <h2>A Passionate Web Developer</h2>
+                <p>I build modern, responsive, and user-friendly web applications.</p>
+                <a href="#projects" class="btn">View My Academic projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/profile_photo.jpg" alt="A photo of Atharva Kokane">
+            </div>
+        </section>
+
+      <section id="about">
+    <h2>About Me</h2>
+
+    <p>
+        I'm Atharva Kokane, a Computer Science Engineering student at Savitribai Phule Pune University with a passion for full-stack development. With proficiency in both frontend and backend technologies including <strong>Java, C++, React, MySQL and IOT </strong>-I bring ideas to life with clean, efficient, and scalable code. My expertise also extends to <strong>Figma</strong>, allowing me to craft visually appealing and intuitive UI/UX designs.
+    </p>
+
+    <p>
+        This blend of creative design and logical coding requires immense focus, a quality I cultivate daily. I am a firm believer that personal discipline is the foundation for professional success. A core part of my routine is a dedicated one-hour workout, which builds the resilience and energy I bring to every technical challenge.
+    </p>
+    
+    <p>
+        As a proactive team player, I am now actively seeking an internship where I can apply this same focus and practical experience. Let’s collaborate and build something amazing together!
+    </p>
+
+</section>
+
+        <section id="projects">
+            <h2>My Academic projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/IntelliCharge_project.jpg" alt="Screenshot of Project One">
+                    <div class="project-info">
+                        <h3>IntelliCharge-Smart Wireless Charging System for Electric Vehicles(Car)</h3>
+                        <p>Core Concept : A Smart Wireless EV Charging System with an integrated Nextion HMI display for a seamless, contactless experience.</p>
+                        <div class="project-links">
+                            <a href="https://youtu.be/RJh9M6fADf4?si=lkcsPtyT2VOc701z" target="_blank">Live Demo</a>
+                            <a href="https://github.com/atharva-kokane/IntelliCharge.git" target="_blank">Project Repositories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/project2.jpg" alt="Screenshot of Project Two">
+                    <div class="project-info">
+                        <h3>Project Two Title</h3>
+                        <p>A short description of your project. Explain the purpose, the technology used, and your role in it.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank">Live Demo</a>
+                            <a href="#" target="_blank">Project Repositories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item"><i class="fab fa-html5"></i> HTML5</div>
+                <div class="skill-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+                <div class="skill-item"><i class="fab fa-js-square"></i> JavaScript</div>
+                <div class="skill-item"><i class="fab fa-react"></i> React</div>
+                <div class="skill-item"><i class="fab fa-node-js"></i> Node.js</div>
+                <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
+            </div>
+        </section>
+
+        <section id="resume">
+            <h2>My Resume</h2>
+            <p>Download my resume to learn more about my experience and qualifications.</p>
+            <a href="Atharva Kokane_Resume01.pdf" target="_blank" class="btn">View Resume</a>
+        </section>
+
+        <section id="contact">
+            <h2>Get In Touch</h2>
+            <p>I'm currently open to new opportunities. Feel free to send me an email!</p>
+            <a href="mailto:atharvakokane555@gmail.com" class="btn">Email Me</a>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/atharva-kokane" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/atharva-kokane" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 by Atharva Kokane. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // This script prevents the page from jumping to a section on refresh
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.location.hash) {
+                // Use replaceState to remove the hash from the URL without reloading
+                history.replaceState(null, null, ' ');
+                // Scroll to the top of the page
+                window.scrollTo(0, 0);
+            }
+        });
+    </script>
+</body>
+</html>
