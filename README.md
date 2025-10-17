@@ -1,7 +1,7 @@
 ## My Personal Portfolio Website
 A clean, responsive, and professional portfolio website built from scratch to showcase my skills, projects, and professional journey.
 
-## Live Website: atharva-kokane.github.io/Portfolio/ 
+[View my live portfolio website](https://atharva-kokane.github.io/Portfolio/)
 
 ## About This Project
 This repository contains the source code for my personal portfolio. The website is designed to be a central hub for my professional presence, providing a clear overview of my capabilities as a developer. It's built with a focus on a clean user interface, responsiveness, and a great user experience.
