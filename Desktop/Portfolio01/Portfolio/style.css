@@ -1,0 +1,295 @@
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #007bff; /* A nice blue */
+    --secondary-color: #343a40; /* Dark gray */
+    --light-color: #f8f9fa; /* Light gray */
+    --text-color: #333;
+    --bg-color: #ffffff;
+    --font-family: 'Poppins', sans-serif;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--secondary-color);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker blue */
+}
+
+/* --- Header & Navigation --- */
+header {
+    background: var(--bg-color);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: var(--secondary-color);
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Hero Section --- */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--light-color);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: left;
+}
+
+.hero-image img {
+    max-width: 300px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
+
+/* --- About Section --- */
+#about {
+    max-width: 1450px;
+    margin: auto;
+    text-align: center;
+}
+
+/* in style.css */
+#about p {
+    text-indent: 40px;
+    text-align: justify;
+    line-height: 1.8; /* Makes text easier to read */
+    margin-bottom: 1.0rem; /* Adds nice spacing between paragraphs */
+}
+
+/* Optional: Make the last paragraph stand out a bit */
+#about p:last-child {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+/* --- Projects Section --- */
+#projects {
+    background-color: var(--light-color);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: var(--bg-color);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Removing the project card hover animation for now to focus on image display */
+/*
+.project-card:hover {
+    transform: translateY(-10px);
+}
+*/
+
+.project-card img {
+    width: 100%; /* Changed from 105% to 100% to ensure it fits the card width */
+    height: 200px;
+    object-fit: contain; /* Changed to 'contain' as per our last discussion for full image visibility */
+    background-color: #f0f0f0; /* Optional: adds a light gray background to the empty space */
+}
+
+.project-info {
+    padding: 1.5rem;
+}
+
+.project-links a {
+    margin-right: 1rem;
+    font-weight: 600;
+}
+
+/* --- Skills Section --- */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.skill-item {
+    background: var(--light-color);
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skill-item i {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+/* --- Resume Section --- */
+#resume {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    background-color: var(--bg-color); /* Added a background for consistency */
+}
+
+/* --- Contact Section --- */
+#contact {
+    text-align: center;
+}
+
+#contact p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.social-links a {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin: 0 1rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Footer --- */
+footer {
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    text-align: center;
+    padding: 1.5rem 10%;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none; /* Simple hiding for mobile, can be replaced with a hamburger menu */
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 6rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero h2 {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 200px;
+    }
+}
